@@ -11,7 +11,11 @@ When setting the primary font stack, apply it to the Pure grid units along
 with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use
 specific font stacks to ensure the greatest OS/browser compatibility.
 */
-html, button, input, select, textarea,
+html,
+button,
+input,
+select,
+textarea,
 .MJXc-TeX-unknown-R,
 .pure-g [class*="pure-u"] {
   /* Set your content font stack here: */
@@ -34,7 +38,8 @@ body {
   padding-right: 50px;
   padding-top: 20px; }
 
-a, button.submit {
+a,
+button.submit {
   color: #6E7173;
   text-decoration: none;
   -webkit-transition: all .1s ease-in;
@@ -42,7 +47,8 @@ a, button.submit {
   -o-transition: all .1s ease-in;
   transition: all .1s ease-in; }
 
-a:hover, a:active {
+a:hover,
+a:active {
   color: #444; }
 
 a:focus {
@@ -55,12 +61,12 @@ div {
   box-sizing: border-box; }
 
 #header {
-  padding: 58px 0 0;
+  padding: 30px 0 0;
   text-align: left;
   border-bottom: 1px solid #ddd;
   position: relative; }
   #header .site-name {
-    margin-bottom: 40px; }
+    margin-bottom: 20px; }
     #header .site-name h1 {
       padding: 0;
       margin: 0;
@@ -92,6 +98,8 @@ div {
       #header #nav-menu a.current {
         border: 1px solid #ddd;
         border-bottom-color: #fff; }
+    #header #nav-menu .icon:before {
+      opacity: .8; }
 
 #sidebar {
   border-left: 1px solid #ddd;
@@ -161,7 +169,7 @@ div {
   color: #888; }
 
 .post {
-  padding: 25px 0 15px; }
+  padding: 10px 0; }
   .post .post-title {
     margin: 0;
     color: #555;
@@ -176,14 +184,6 @@ div {
     float: left;
     display: inline;
     text-indent: .15em; }
-    .post .post-meta:before {
-      font-family: "FontAwesome";
-      content: "\f073";
-      padding-right: 0.3em; }
-    .post .post-meta .category:before {
-      font-family: "FontAwesome";
-      content: "\f07c";
-      padding-right: 0.3em; }
     .post .post-meta #busuanzi_value_page_pv:before {
       font-family: "FontAwesome";
       content: "\f024";
@@ -264,22 +264,27 @@ div {
       padding: 0.5em 0;
       margin: auto;
       display: block; }
-    .post .post-content ul, .post .post-content ol {
+    .post .post-content ul,
+    .post .post-content ol {
       border-radius: 3px;
       margin: 1em 0; }
-      .post .post-content ul ul, .post .post-content ol ul {
+      .post .post-content ul ul,
+      .post .post-content ol ul {
         margin: 0; }
-      .post .post-content ul code, .post .post-content ol code {
+      .post .post-content ul code,
+      .post .post-content ol code {
         display: inline-block;
         margin: 0 5px;
         padding: 0px 5px;
         background: #f7f8f8;
         font-family: Menlo, Consolas, monospace !important; }
-      .post .post-content ul a, .post .post-content ol a {
+      .post .post-content ul a,
+      .post .post-content ol a {
         color: #01579f;
         padding-bottom: 2px;
         word-break: normal; }
-        .post .post-content ul a:hover, .post .post-content ol a:hover {
+        .post .post-content ul a:hover,
+        .post .post-content ol a:hover {
           text-decoration: underline; }
     .post .post-content .tagcloud {
       margin: 0 0 30px 0; }
@@ -294,6 +299,8 @@ div {
           color: #fff;
           border: 1px solid #808080;
           background: #808080; }
+      .post .post-content .tagcloud.categorycloud a {
+        border-radius: 0; }
     .post .post-content .one-tag-list {
       margin: 30px 0; }
       .post .post-content .one-tag-list .tag-name .tag-text {
@@ -319,25 +326,31 @@ div {
   .page-navigator .page-number {
     display: inline-block;
     margin: 0 5px 5px 0; }
-  .page-navigator a, .page-navigator span {
+  .page-navigator a,
+  .page-navigator span {
     display: inline-block;
     height: 25px;
     line-height: 25px;
     padding: 5px 9px;
     border: 1px solid #DDD;
     text-align: center; }
-    .page-navigator a:hover, .page-navigator span:hover {
+    .page-navigator a:hover,
+    .page-navigator span:hover {
       background: #F8F8F8;
       border-bottom-color: #D26911; }
-    .page-navigator a.prev, .page-navigator span.prev {
+    .page-navigator a.prev,
+    .page-navigator span.prev {
       float: left; }
-      .page-navigator a.prev:before, .page-navigator span.prev:before {
+      .page-navigator a.prev:before,
+      .page-navigator span.prev:before {
         font-family: "FontAwesome";
         content: "\f100";
         padding-right: 0.3em; }
-    .page-navigator a.next, .page-navigator span.next {
+    .page-navigator a.next,
+    .page-navigator span.next {
       float: right; }
-      .page-navigator a.next:after, .page-navigator span.next:after {
+      .page-navigator a.next:after,
+      .page-navigator span.next:after {
         font-family: "FontAwesome";
         content: "\f101";
         padding-left: 0.3em; }
@@ -349,13 +362,15 @@ div {
     padding: 5px 5px; }
 
 #footer {
-  padding: .8em 0 3.6em;
+  padding: .8em 0;
   margin-top: 1em;
   line-height: 2.5;
-  color: #6E7173;
+  color: #CCC;
   text-align: center; }
-  #footer span {
-    font-size: .9em; }
+  #footer a {
+    color: inherit; }
+    #footer a:hover {
+      color: initial; }
 
 /* for archive page starts*/
 .post-archive {
@@ -379,17 +394,19 @@ div {
     display: none !important; }
   #sidebar {
     border-left-width: 0px; }
-  #header .site-name {
-    margin-bottom: 20px;
-    text-align: center; }
-  #header #nav-menu {
-    position: relative;
-    text-align: center; }
-    #header #nav-menu a {
-      padding: 0 15px;
-      line-height: 27px;
-      height: 27px;
-      font-size: 13px; } }
+  #header {
+    padding-top: 58px; }
+    #header .site-name {
+      margin-bottom: 20px;
+      text-align: center; }
+    #header #nav-menu {
+      position: relative;
+      text-align: center; }
+      #header #nav-menu a {
+        padding: 0 15px;
+        line-height: 27px;
+        height: 27px;
+        font-size: 13px; } }
 
 /* small*/
 @media print, screen and (max-width: 35.5em) {
@@ -398,7 +415,8 @@ div {
   .content_container {
     padding-right: 0; } }
 
-blockquote, .stressed {
+blockquote,
+.stressed {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 2.5em 0;
@@ -406,7 +424,8 @@ blockquote, .stressed {
   color: #555;
   border-left: none; }
 
-blockquote::before, .stressed-quote::before {
+blockquote::before,
+.stressed-quote::before {
   content: "\201C";
   display: block;
   font-family: times;
@@ -418,7 +437,9 @@ blockquote::before, .stressed-quote::before {
   margin-left: -50px;
   position: absolute; }
 
-strong, b, em {
+strong,
+b,
+em {
   font-weight: bold; }
 
 pre {
@@ -494,8 +515,10 @@ pre {
   position: relative;
   margin-bottom: 30px; }
 
-#process .timeline-centered::before, #process .timeline-centered::after,
-#process .timeline-centered::before, #process .timeline-centered::after {
+#process .timeline-centered::before,
+#process .timeline-centered::after,
+#process .timeline-centered::before,
+#process .timeline-centered::after {
   content: " ";
   display: table; }
 
